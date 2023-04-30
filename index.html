@@ -285,3 +285,289 @@
    
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>PORTFOLIO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+      <!-- Carousel -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+      <!-- AOS -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <style>
+        .cbg{
+          background-color: black;
+          border: 1px solid #0dcaf0;
+          position: relative;
+          cursor: pointer;
+        }
+        .cbg:hover .content {
+  color: rgb(36, 36, 36);
+}
+  .cbg .content{
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(20px);
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.055);
+  transition: all .4s;
+  }
+  .cbg .content p{
+  font-size: 0.8em;
+  padding: 0.3em 1.5em;
+  text-align: center;
+  }
+  .cbg:hover .content{
+  color: rgb(36, 36, 36);
+  }
+  .cbg::before,
+  .cbg::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: #7F00FF;
+  z-index: -20;
+  transition: all .4s;
+  }
+  .cbg::before{
+  top: 0;
+  right: 0;
+  }
+  .cbg::after{
+  bottom: 0;
+  left: 0;
+  background: #E100FF;
+  }
+  .cbg:hover::before{
+  width: 50px;
+  height: 50px;
+  transform: translate(20px, -20px);
+  border-radius: 50%;
+  }
+  .cbg:hover::after{
+  width: 100px;
+  height: 100px;
+  transform: translate(-20px, 20px);
+  border-radius: 50%;
+  }
+.cbg::before,
+.cbg::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: #7F00FF;
+  z-index: -20;
+  transition: all .4s;
+}
+
+.cbg::before {
+  top: 0;
+  right: 0;
+}
+
+.cbg::after {
+  bottom: 0;
+  left: 0;
+  background: #E100FF;
+}
+
+.cbg:hover::before {
+  width: 50px;
+  height: 50px;
+  transform: translate(20px, -20px);
+  border-radius: 50%;
+}
+
+.cbg:hover::after {
+  width: 100px;
+  height: 100px;
+  transform: translate(-20px, 20px);
+  border-radius: 50%;
+}
+      </style>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 border-end">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white fw-bold min-vh-100 position-sticky sticky-top">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li>
+                          <a href="./index.html" class="nav-link px-0 align-middle text-white fw-bold">
+                            <i class="text-info fa-solid fa-house"></i> <span class="ms-1 d-none d-sm-inline">Acceuil</span></a>
+                        </li>
+                        <li>
+                            <a href="./about.html" class="nav-link px-0 align-middle text-white fw-bold">
+                              <i class="text-info fa-solid fa-user"></i> <span class="ms-1 d-none d-sm-inline">A propos</span></a>
+                        </li>
+                        <li>
+                          <a href="./real.html" class="nav-link px-0 align-middle text-white fw-bold">
+                            <i class="text-info fa-solid fa-shield-halved"></i> <span class="ms-1 d-none d-sm-inline">Realisations</span></a>
+                        </li>
+                        <li>
+                            <a href="./contacts.html" class="nav-link px-0 align-middle text-white fw-bold">
+                              <i class="text-info fa-solid fa-address-book"></i> <span class="ms-1 d-none d-sm-inline">Contacts</span> </a>
+                        </li>
+                      </ul>
+
+                      <ul class="nav nav-pills flex-row align-items-center align-items-sm-start mt-auto" id="menu">
+                        <li class="me-2">
+                          <a href="#" class="nav-link px-0 align-middle text-info fs-5">
+                            <i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="me-2">
+                            <a href="#" class="nav-link px-0 align-middle text-info fs-5">
+                              <i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                        <li class="me-2">
+                          <a href="#" class="nav-link px-0 align-middle text-info fs-5">
+                            <i class="fa-brands fa-linkedin-in"></i></span></a>
+                        </li>
+                        <li>
+                          <a href="#" class="nav-link px-0 align-middle text-info fs-5">
+                            <i class="fa-brands fa-snapchat"></i></a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col py-3">
+                <div class="container d-flex justify-content-center align-items-center text-white text-center" id="acceuil">
+                  <h1>DEVELOPPEUR WEB <br> <span class="fs-5">JOE DOE</span></h1>
+                </div>
+
+                <div class="container mt-5">
+                  <div class="row">
+                    <div class="col-12 p-5 d-flex justify-content-center align-items-center text-white text-center">
+                      <p class="text-secondary w-75">
+                          My name is....... Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quasi? Mollitia nesciunt unde atque ipsa voluptatum!
+                        Dolorum, facilis incidunt accusantium unde libero labore accusamus aspernatur, distinctio vero saepe aliquid voluptas?
+                      </p>
+                    </div>
+                    <div class="col-12 text-end">
+                      <a href="./about.html" class="btn btn-info text-white">PLUS</a>
+                    </div>
+                  </div>
+                </div>
+
+              <section class=" container mt-5 mb-5">
+               <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-3 colonne">
+                  <div class="card cbg">
+                    <div class="content">
+                      <a href="£">
+                        <img src="./medias/html-css.jpg" class="w-100" height="150px">
+                      </a>
+                      <p>HTML 5 / CSS 3</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-3 colonne">
+                  <div class="card cbg">
+                    <div class="content">
+                      <a href="#">
+                        <img src="./medias/bootstrap.png" class="w-100" height="150px">
+                      </a>
+                      <p>BOTSTRAP5 5</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-3 colonne">
+                  <div class="card cbg">
+                    <div class="content">
+                      <a href="#">
+                        <img src="./medias/js2.png" class="w-100" height="150px">
+                      </a>
+                      <p>JAVASCRIPT</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-3 colonne">
+                  <div class="card cbg">
+                    <div class="content">
+                    <a href="#">
+                      <img src="./medias/wordpress.jpg" class="w-100" height="150px">
+                    </a>
+                      <p>WORDPRESS</p>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </section>  
+              <div class="col-md-6 mb-5">
+                <a href="./real.html" class="btn btn-info text-white">PROJETS</a>
+              </div>
+              <hr class="text-white">
+              <a href="#">
+                <p class="text-white mt-5 fw-bold fs-5">Instagram Feed</p>
+              </a>
+              <p class="text-secondary text-center p-5 pb-0">© distinctio vero saepe. All rights reserved.</p>      
+            </div>
+            
+        </div>
+
+      
+    </div>
+    </main>
+    
+    
+
+
+
+
+<script src="./index.js"></script>
+  <script
+  src="https://kit.fontawesome.com/712d58e84c.js"
+  crossorigin="anonymous"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  // navbar
+  const navEl = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 56) {
+      navEl.classList.add('navbar-scrolled');
+    }else if (window.scrollY < 56) {
+      navEl.classList.remove('navbar-scrolled');
+    }
+  })
+
+</script>
+   
+  </body>
+</html>
